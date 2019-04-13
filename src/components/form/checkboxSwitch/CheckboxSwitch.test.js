@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 
 test('checkboxSwicth change on click', () => {
     const component = renderer.create(
-        <CheckboxSwitch />,
+        <CheckboxSwitch />
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();

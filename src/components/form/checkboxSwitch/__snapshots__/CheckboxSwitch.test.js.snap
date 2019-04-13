@@ -2,26 +2,30 @@
 
 exports[`checkboxSwicth change on click 1`] = `
 <label
-  className=" undefined"
+  className=" switch"
 >
   <input
     onBlur={[Function]}
     onFocus={[Function]}
     type="checkbox"
   />
-  <span />
+  <span
+    className="slider"
+  />
 </label>
 `;
 
 exports[`checkboxSwicth change on click 2`] = `
 <label
-  className="undefined undefined"
+  className="focused switch"
 >
   <input
     onBlur={[Function]}
     onFocus={[Function]}
     type="checkbox"
   />
-  <span />
+  <span
+    className="slider"
+  />
 </label>
 `;

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import CheckboxSwitch from "./components/form/checkboxSwitch/CheckboxSwitch";
+import  "./scss/bootstrap.scss"
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <CheckboxSwitch id="test"/>
+          <button className="btn btn-success">BUTTON</button>
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
