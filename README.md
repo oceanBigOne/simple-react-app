@@ -16,8 +16,8 @@ Starts the test runner.
 Removes this tool and copies build dependencies, configuration files
 and scripts into the app directory. If you do this, you can’t go back!
 
-`yarn mock-api`
+`yarn mock-api`  
 Starts the development server with mocked API
 
-`yarn test-with-puppeteer`
+`yarn test-with-puppeteer`  
 Starts the development server with mocked API and launch test with puppeteer.
