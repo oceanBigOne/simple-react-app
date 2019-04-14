@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "mock-api": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\"",
+    "mocked-api": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\"",
     "test-with-puppeteer": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\" \"node ./test/launcher.js\""
   },
   "eslintConfig": {
