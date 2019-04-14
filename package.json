@@ -11,13 +11,14 @@
     "reactstrap": "^8.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "mocked-api": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\"",
+    "start": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\"",
+    "start-front": "react-scripts start",
+    "start-api": "node ./mock-api/http.js",
     "test": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\" \"jest ./test/* --watch\" \"react-scripts test --watch\"",
     "test-user": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\" \"jest ./test/* --watch\"",
-    "test-components": "react-scripts test"
+    "test-components": "react-scripts test",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
