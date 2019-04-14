@@ -4,10 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "concurrently": "^4.1.0",
-    "jest-puppeteer": "^4.1.1",
     "node-sass": "^4.11.0",
-    "puppeteer": "^1.14.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
@@ -31,6 +28,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "react-test-renderer": "^16.8.6"
+    "concurrently": "^4.1.0",
+    "jest-puppeteer": "^4.1.1",
+    "puppeteer": "^1.14.0",
+    "react-test-renderer": "^16.8.6",
+    "pixelmatch": "^4.0.2"
   }
 }
