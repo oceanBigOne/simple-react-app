@@ -13,10 +13,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "mocked-api": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\"",
-    "test-with-puppeteer": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\" \"node ./test/launcher.js\""
+    "test": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\" \"jest ./test/* --watch\" \"react-scripts test --watch\"",
+    "test-user": "concurrently --kill-others \"node ./mock-api/http.js\" \"react-scripts start\" \"jest ./test/* --watch\"",
+    "test-components": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -9,9 +9,6 @@ Starts the development server.
 `yarn build`  
 Bundles the app into static files for production.
 
-`yarn test`  
-Starts the test runner.
-
 `yarn eject`  
 Removes this tool and copies build dependencies, configuration files
 and scripts into the app directory. If you do this, you can’t go back!
@@ -19,5 +16,13 @@ and scripts into the app directory. If you do this, you can’t go back!
 `yarn mocked-api`  
 Starts the development server with mocked API
 
-`yarn test-with-puppeteer`  
-Starts the development server with mocked API and launch test with puppeteer.
+`yarn test`  
+Starts the development server and the simulated API server, then starts all tests (separate components and user stories with puppeteer)
+
+`yarn test-components`  
+Starts the test runner on components in /src dir.
+
+`yarn test-user`  
+Starts the development server and the simulated API server, then starts to test user stories with puppeteer)
+
+
