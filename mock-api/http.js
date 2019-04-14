@@ -32,11 +32,13 @@ const myFirstServer = http.createServer(handleRequest);
 
 //A sample GET request
 dispatcher.onGet("/", function(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.writeHead(200, {'Content-Type': 'application/json'});
     res.end('{"mocked-api":"ok"}');
 });
 
 dispatcher.onGet("/election/create/", function(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
     var url_parts = url.parse(req.url, true);
     var name = url_parts.query.name;
     if(name){
@@ -50,6 +52,7 @@ dispatcher.onGet("/election/create/", function(req, res) {
 });
 
 dispatcher.onError(function(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.writeHead(404, {'Content-Type': 'application/json'});
     res.end('{"status": 404,"title": "Page not found","detail": "Please check your URL."}');
 });
