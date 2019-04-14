@@ -1,4 +1,6 @@
 const http=require("http");
+
+console.log("Starting the mocked api server...");
 http.createServer(function (request, response) {
     // Send the HTTP header
     // HTTP Status: 200 : OK
